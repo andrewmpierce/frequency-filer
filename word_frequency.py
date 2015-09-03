@@ -1,22 +1,18 @@
 import re
 
-def file(link):
+def main(link):
     file = open(link)
     sample = file.read()
-    return sample
+    print(word_frequency(sample))
 
 def word_frequency(string):
     words = re.sub(r'[^A-Za-z0-9 ]', ' ', string).lower().split()
-    print(words)
-    worddict = {}
+    freq = {}
     for word in words:
-        if word not in worddict:
-            worddict[word] = int(1)
-        else: worddict[word] += 1
-    return print(worddict)
+        if word not in freq:
+            freq[word] = int(1)
+        else: freq[word] += 1
+    return freq
 
-
-
-
-
-word_frequency(file("sample.txt"))
+if __name__ == '__main__':
+    main("sample.txt")
