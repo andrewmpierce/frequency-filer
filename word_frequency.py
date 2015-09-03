@@ -12,6 +12,7 @@ def word_frequency(string):
         if word not in freq:
             freq[word] = int(1)
         else: freq[word] += 1
+    #freq = sorted(freq, key=freq.__getitem__, reverse =True)
     return freq
 
 if __name__ == '__main__':
