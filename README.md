@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 03 -- Frequency Filer
 
 ## Description
@@ -117,3 +118,7 @@ the word "the" 75 times and the word "and" 47 times, you'd have 50 `#` for
 * [Project Gutenberg](https://www.gutenberg.org/) - good source of free texts.
 * [String type in Python](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str).
 * [Regular expression operations](https://docs.python.org/3/library/re.html).
+=======
+# frequency-filer
+A word counter application that reads a .txt file and creates a list of most used words.
+>>>>>>> 50ed965bf822e652b8bc31a901c660654d28ab68
