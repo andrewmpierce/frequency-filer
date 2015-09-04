@@ -15,7 +15,7 @@ def loop(dictionary):
 
 
 def word_frequency(string):
-    words = re.sub(r'[^A-Za-z0-9 ]', ' ', string).lower().split()
+    words = re.sub(r'[^A-Za-z0-9\s]', '', string).lower().split()
     freq = {}
     for word in words:
         if word not in freq:
