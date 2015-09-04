@@ -1,5 +1,5 @@
 import unittest
-from word_frequency import word_frequency
+from word_frequency_hard import word_frequency
 
 gettysburg_address = """
 Four score and seven years ago our fathers brought forth on this continent, a

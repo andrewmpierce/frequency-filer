@@ -1,12 +1,12 @@
 import re
+import sys
 
 
-
-def main(link):
+def main():
+    link = sys.argv[1]
     file = open(link)
     sample = file.read()
     return loop(word_frequency(sample))
-
 
 def loop(dictionary):
     counter = 0
@@ -31,4 +31,4 @@ def word_frequency(string):
     return freq
 
 if __name__ == '__main__':
-    main("sample.txt")
+    main()
