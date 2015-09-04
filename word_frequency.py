@@ -13,6 +13,7 @@ def loop(dictionary):
         print(sorted_list[counter][0] + ' ' + str(sorted_list[counter][1]))
         counter += 1
 
+
 def word_frequency(string):
     words = re.sub(r'[^A-Za-z0-9 ]', ' ', string).lower().split()
     freq = {}
@@ -24,9 +25,3 @@ def word_frequency(string):
 
 if __name__ == '__main__':
     main("sample.txt")
-
-#Returns a dict of top 20 used words, NOT in order,
-#b/c dicts are unordered
-# test fails if example is not in top 20
-#Options: Figure out how to order dictionary & preserve full contents
-#Figure out how to return numbers in word_frequency and list contents through main
