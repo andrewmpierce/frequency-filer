@@ -24,10 +24,9 @@ def word_frequency(string):
     words = re.sub(r'[^A-Za-z0-9 ]', ' ', string).lower().split()
     freq = {}
     for word in words:
-        if word not in ignored_words:
-            if word not in freq:
-                freq[word] = 1
-            else: freq[word] += 1
+        if word not in freq:
+            freq[word] = 1
+        else: freq[word] += 1
     for word in ignored_words:
         if word in freq:
             del freq[word]
